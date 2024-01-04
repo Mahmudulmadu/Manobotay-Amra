@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main Container background */
+
+.main-container {
+    width: 100%;
+    height: fit-content;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+/* Content container */
+
+.content-container {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Cards */
+
+.cards{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card-front {
+    background-image: url(images/bg-card-front.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 25rem;
+    height: 14rem;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.cards .card-front img{
+    margin-bottom: 60px;
+}
+
+.cards .card-front p{
+    color: hsl(270, 3%, 87%);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cards .card-front div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card-front span{
+    color: hsl(270, 3%, 87%);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cards .card-back {
+    background-image: url(images/bg-card-back.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 25rem;
+    height: 14rem;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-self: flex-end;
+    position: relative;
+}
+
+.cards .card-back p{
+    position: absolute;
+    top: 99px;
+    right: 45px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Form */
+
+form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form.hide{
+    display:none;
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px hsl(270, 3%, 87%) solid;
+    color: hsl(279, 6%, 55%);
+    margin-top: 8px;
+}
+
+form input:focus{
+    outline: 2px solid hsl(278, 94%, 30%);
+}
+
+form p{
+    font-size: 14px;
+    color: hsl(0, 100%, 66%);
+}
+
+.empty, .error {
+    display: none;
+}
+
+.empty.show, .error.show {
+    display: block;
+}
+
+.date-cvc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-cvc input {
+    width: 40%;
+}
+
+.date {
+    width: 50%;
+}
+
+.date input {
+    width: 45%;
+}
+
+.cvc{
+    width: 50%;
+}
+
+.cvc input {
+    width: 100%;
+}
+
+form button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Succeed form */
+
+.succeed-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.succeed-form.hide{
+    display: none;
+}
+
+.succeed-form img {
+    margin-bottom: 30px;
+}
+
+.succeed-form h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.succeed-form p {
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 30px;
+}
+
+.succeed-form button {
+    font-size: 18px;
+}
